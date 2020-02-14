@@ -1,7 +1,7 @@
 FiniteAutomatonDeterministic = {}
 FiniteAutomatonDeterministic.__index = FiniteAutomatonDeterministic
 
-function FiniteAutomatonDeterministic:Generate(states, alphabet, transitionFunction, initialState, endStates)
+function FiniteAutomatonDeterministic:create(states, alphabet, transitionFunction, initialState, endStates)
     local this = {
         states = states,
         alphabet = alphabet,
@@ -13,6 +13,6 @@ function FiniteAutomatonDeterministic:Generate(states, alphabet, transitionFunct
     return this
 end
 
-function FiniteAutomatonDeterministic:getstate(state)
+function FiniteAutomatonDeterministic:generatestate(state)
     
 end
